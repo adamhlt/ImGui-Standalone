@@ -37,3 +37,7 @@ Everything is setup, you just need to choose between DLL or EXE.
 ⚠️ If you have any linking error when compiling make sure that you have correctly install DirectX SDK.
 
 ## 🧪 Demonstration :
+
+### GUI Application (EXE - x64)
+https://user-images.githubusercontent.com/48086737/165841805-e6bfc190-eaa4-4f0e-8e82-9b9f33bad249.mp4
+
