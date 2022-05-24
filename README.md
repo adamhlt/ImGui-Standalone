@@ -1,4 +1,4 @@
-![Banner](https://raw.githubusercontent.com/adamhlt/ImGui-Standalone/main/Ressources/banner.png?token=GHSAT0AAAAAABT6O75K4ZK35V554OA5G3UQYTLAKJA)
+![Banner](https://user-images.githubusercontent.com/48086737/170120843-72d0d7d2-9baf-41c5-9284-af64aa506d01.png)
 
 # ImGui Standalone
 
