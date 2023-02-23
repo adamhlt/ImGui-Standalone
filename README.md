@@ -19,7 +19,8 @@ This project works in x86 and x64, DLL and EXE.
 
 ## :rocket: Getting Started
 
-Make that **DXSDK_DIR** is declared in your environment variables.
+> **Note** <br>
+> Make sure that **DXSDK_DIR** is declared in your environment variables.
 
 To see your environment variables :
 
@@ -34,7 +35,8 @@ Every configuration in x86 / x64 (Debug and Realese) are already configured with
 
 Everything is setup, you just need to choose between DLL or EXE.
 
-⚠️ If you have any linking error when compiling make sure that you have correctly install DirectX SDK.
+> **Warning** <br>
+> If you have any linking error when compiling make sure that you have correctly install DirectX SDK.
 
 ## 🧪 Demonstration :
 
