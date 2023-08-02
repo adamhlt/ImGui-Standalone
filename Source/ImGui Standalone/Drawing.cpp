@@ -1,8 +1,8 @@
 #include "Drawing.h"
 
 LPCSTR Drawing::lpWindowName = "ImGui Standalone";
-ImVec2 Drawing::vWindowSize = { 500, 500 };
-ImGuiWindowFlags Drawing::WindowFlags = ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoResize;
+ImVec2 Drawing::vWindowSize = { 350, 75 };
+ImGuiWindowFlags Drawing::WindowFlags = 0;
 bool Drawing::bDraw = true;
 
 void Drawing::Active()
@@ -19,11 +19,14 @@ void Drawing::Draw()
 {
 	if (isActive())
 	{
-		ImGui::SetNextWindowSize(vWindowSize);
+		ImGui::SetNextWindowSize(vWindowSize, ImGuiCond_Once);
 		ImGui::SetNextWindowBgAlpha(1.0f);
 		ImGui::Begin(lpWindowName, &bDraw, WindowFlags);
 		{
-			ImGui::Text("Test");
+
+			ImGui::Text("Create your own menu.");
+
+			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
 		}
 		ImGui::End();
 	}

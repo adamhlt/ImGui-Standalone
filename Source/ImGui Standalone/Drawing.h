@@ -1,9 +1,7 @@
 #ifndef DRAWING_H
 #define DRAWING_H
 
-#include <Windows.h>
-
-#include "ImGui/imgui.h"
+#include "pch.h"
 
 class Drawing
 {
