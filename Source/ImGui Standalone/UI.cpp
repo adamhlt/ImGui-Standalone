@@ -9,6 +9,8 @@ ID3D11DeviceContext* UI::pd3dDeviceContext = nullptr;
 IDXGISwapChain* UI::pSwapChain = nullptr;
 ID3D11RenderTargetView* UI::pMainRenderTargetView = nullptr;
 
+HMODULE UI::hCurrentModule = nullptr;
+
 bool UI::CreateDeviceD3D(HWND hWnd)
 {
     DXGI_SWAP_CHAIN_DESC sd;
@@ -155,8 +157,6 @@ void UI::Render()
         style.Colors[ImGuiCol_WindowBg].w = 1.0f;
     }
 
-
-
     const HMONITOR monitor = MonitorFromWindow(hwnd, MONITOR_DEFAULTTONEAREST);
     MONITORINFO info = {};
     info.cbSize = sizeof(MONITORINFO);
@@ -190,6 +190,10 @@ void UI::Render()
             if (msg.message == WM_QUIT)
                 bDone = true;
         }
+
+        if (GetAsyncKeyState(VK_END) & 1)
+            bDone = true;
+
         if (bDone)
             break;
 
@@ -230,6 +234,6 @@ void UI::Render()
     ::UnregisterClass(wc.lpszClassName, wc.hInstance);
 
     #ifdef _WINDLL
-    ExitThread(0);
+    CreateThread(nullptr, NULL, (LPTHREAD_START_ROUTINE)FreeLibrary, hCurrentModule, NULL, nullptr);
     #endif
 }
