@@ -14,10 +14,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
     }
 
     if (fdwReason == DLL_PROCESS_DETACH)
-    {
         TerminateThread(hCurrentUIThread, 0);
-        CreateThread(nullptr, NULL, (LPTHREAD_START_ROUTINE)FreeLibrary, hinstDLL, NULL, nullptr);
-    }
 
     return TRUE;
 }
