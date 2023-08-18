@@ -24,6 +24,11 @@ You can easily use it as a DLL for external in an internal cheat or build GUI ap
 
 This project works in x86 and x64, DLL and EXE.
 
+#### Looking for a DirectX Overlay ?
+
+- [**D3D9 Overlay ImGui**](https://github.com/adamhlt/D3D9-Overlay-ImGui)
+- [**D3D11 Overlay ImGui**](https://github.com/adamhlt/D3D11-Overlay-ImGui)
+
 #### Used librairies :
 
 - [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
