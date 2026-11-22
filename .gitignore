@@ -1,0 +1,13 @@
+# Visual Studio
+.vs/
+*.user
+*.aps
+*.suo
+*.VC.db
+*.VC.opendb
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+Win32/

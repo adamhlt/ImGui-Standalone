@@ -55,6 +55,22 @@ Everything is setup, you just need to choose between DLL or EXE.
 > **Warning** <br>
 > If you have any linking error when compiling make sure that you have correctly install DirectX SDK.
 
+## :file_folder: Project Structure :
+
+```
+ImGuiStandalone.sln
+ImGuiStandalone/
+  src/
+    main.cpp        EXE entry point (wWinMain)
+    dllmain.cpp     DLL entry point (DllMain)
+    pch.h / pch.cpp Precompiled header
+    ui/
+      Window.*      Win32 window, message loop, ImGui setup
+      Renderer.*    D3D11 device, swap chain, render target
+      Menu.*        Your ImGui menu (edit Menu::Draw)
+vendor/imgui/       ImGui sources (untouched)
+```
+
 ## 🧪 Demonstration :
 
 ### GUI Application (EXE - x64)

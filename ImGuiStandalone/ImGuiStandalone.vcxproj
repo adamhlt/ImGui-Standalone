@@ -88,6 +88,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -103,6 +106,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -118,6 +124,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -133,6 +142,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(SolutionDir)vendor;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -143,29 +155,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Drawing.cpp" />
-    <ClCompile Include="ImGui\imgui.cpp" />
-    <ClCompile Include="ImGui\imgui_demo.cpp" />
-    <ClCompile Include="ImGui\imgui_draw.cpp" />
-    <ClCompile Include="ImGui\imgui_impl_dx11.cpp" />
-    <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
-    <ClCompile Include="ImGui\imgui_tables.cpp" />
-    <ClCompile Include="ImGui\imgui_widgets.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ui\Menu.cpp" />
+    <ClCompile Include="src\ui\Renderer.cpp" />
+    <ClCompile Include="src\ui\Window.cpp" />
+    <ClCompile Include="..\vendor\imgui\imgui.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_demo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_draw.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_impl_dx11.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_impl_win32.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_tables.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Drawing.h" />
-    <ClInclude Include="ImGui\imconfig.h" />
-    <ClInclude Include="ImGui\imgui.h" />
-    <ClInclude Include="ImGui\imgui_impl_dx11.h" />
-    <ClInclude Include="ImGui\imgui_impl_win32.h" />
-    <ClInclude Include="ImGui\imgui_internal.h" />
-    <ClInclude Include="ImGui\imstb_rectpack.h" />
-    <ClInclude Include="ImGui\imstb_textedit.h" />
-    <ClInclude Include="ImGui\imstb_truetype.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="UI.h" />
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\ui\Menu.h" />
+    <ClInclude Include="src\ui\Renderer.h" />
+    <ClInclude Include="src\ui\Window.h" />
+    <ClInclude Include="..\vendor\imgui\imconfig.h" />
+    <ClInclude Include="..\vendor\imgui\imgui.h" />
+    <ClInclude Include="..\vendor\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\vendor\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="..\vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\vendor\imgui\imstb_truetype.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

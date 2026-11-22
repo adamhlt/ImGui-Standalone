@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui">
+      <UniqueIdentifier>{7b2270dc-69b7-4784-8db7-61f0ee3d462d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dllmain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\Menu.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\Renderer.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\Window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_demo.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_draw.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_impl_dx11.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_impl_win32.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_tables.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vendor\imgui\imgui_widgets.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\pch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\Menu.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\Renderer.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\Window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imconfig.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imgui.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imgui_impl_dx11.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imgui_impl_win32.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imgui_internal.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imstb_rectpack.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imstb_textedit.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vendor\imgui\imstb_truetype.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
