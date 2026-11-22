@@ -4,10 +4,10 @@
 
 **D3D11 ImGui external menu, as an EXE or a DLL (x86 / x64)**
 
-![C++](https://img.shields.io/badge/language-C%2B%2B-16171C?style=flat-square)
-![Windows](https://img.shields.io/badge/platform-Windows-16171C?style=flat-square)
-![x86 | x64](https://img.shields.io/badge/arch-x86%20%7C%20x64-16171C?style=flat-square)
-[![License](https://img.shields.io/badge/license-GPLv3-16171C?style=flat-square)](LICENSE)
+![Language](https://img.shields.io/badge/C%2B%2B-16171C?logo=cplusplus)
+![Platform](https://img.shields.io/badge/Windows-16171C)
+![Arch](https://img.shields.io/badge/x86%20%7C%20x64-16171C)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-16171C)](LICENSE)
 
 </div>
 
