@@ -2,7 +2,7 @@
 #include "ui/Menu.h"
 
 LPCSTR Menu::lpWindowName = "ImGui Standalone";
-ImVec2 Menu::vWindowSize = { 350, 75 };
+ImVec2 Menu::vWindowSize = { 500, 300 };
 ImGuiWindowFlags Menu::WindowFlags = 0;
 bool Menu::bDraw = true;
 
