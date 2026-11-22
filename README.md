@@ -59,22 +59,6 @@ void Menu::Draw()
 }
 ```
 
-The project layout:
-
-```
-ImGuiStandalone.sln
-ImGuiStandalone/
-	src/
-		main.cpp         EXE entry point (wWinMain)
-		dllmain.cpp      DLL entry point (DllMain)
-		pch.h / pch.cpp  precompiled header
-		ui/
-			Window.*     Win32 window, message loop, ImGui setup
-			Renderer.*   D3D11 device, swap chain, render target
-			Menu.*       your ImGui menu
-vendor/imgui/            ImGui sources
-```
-
 ## Build
 
 1. Install the [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812).
